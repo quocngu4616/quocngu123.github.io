@@ -1,0 +1,41 @@
+.offer-container{
+    margin-top: 40px;
+    .offer-title{
+        h3{
+            @include text(#343a40,$fs-3,$fw-bold);
+        }
+        span{
+            margin-left: 10px;
+            color:$color-gray-4;
+        }
+        .welcome-title__line{
+            width: 100%;
+            height: 2px;
+            background-color:#343a40;
+            margin-top: $mg-1;
+            margin-bottom:$mg-2 ;
+        }
+    }
+    .offer-item{
+        text-align: center;
+        border: 1px solid #ffc000;
+        padding: $pd-1;
+        display: block;
+        height: 150px;
+        padding-top: 40px;
+        margin-bottom: 10px;
+
+        i{
+            @include text($color-green-0,$fs-4,$fw-normal);
+            margin-bottom:5px;
+        }
+        h3{
+            @include text(#000,$fs-2,$fw-bold);
+            margin-bottom:5px;
+        }
+        p{
+            @include text($color-gray-2,$fs-1,$fw-normal);
+        }
+
+    }
+}

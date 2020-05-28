@@ -1,0 +1,12 @@
+.btn--white {
+    @include button(600, $color-gray-4, $color-white-0, $color-black-0, $color-gray-4);
+}
+.btn--red {
+    @include button(600, $color-white-0, #df322f, #df322f, $color-white-0);
+}
+.btn--btn_blue {
+    @include button(600, $color-white-0, #3a559f, #3a559f, $color-white-0);
+}
+.btn--btn_red-1 {
+    @include button(600, $color-white-0, #df322f, #df322f, $color-white-0);
+}

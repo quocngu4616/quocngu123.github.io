@@ -1,0 +1,120 @@
+.testimonial {
+  margin-top: 40px;
+  .offer-title {
+    margin-left: 70px;
+    h3 {
+      @include text(#343a40, $fs-3, $fw-bold);
+    }
+    span {
+      margin-left: 10px;
+      color: $color-gray-4;
+    }
+    .welcome-title__line {
+      width: 80%;
+      height: 2px;
+      background-color: #343a40;
+      margin-top: $mg-1;
+      margin-bottom: $mg-2;
+    }
+  }
+  .testi__top {
+    background: url(/img/testimonial.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    height: 35vh;
+    margin-top: 1%;
+    .testi__left {
+      .testi__wrapper {
+        display: flex;
+        justify-content: flex-start;
+        color: #666;
+        margin-top: 12%;
+        .testi__img {
+          width: 40%;
+          margin-right: 5%;
+          img {
+            width: 100%;
+          }
+        }
+        .testi__info {
+          h6 {
+            font-weight: 700;
+            font-size: 0.9rem;
+          }
+          p {
+            font-size: 0.9rem;
+          }
+          .rating {
+            color: #f6c016;
+          }
+        }
+      }
+    }
+    .testi__right {
+      .testi__wrapper {
+        display: flex;
+        justify-content: flex-start;
+        color: #666;
+        margin-top: 12%;
+        .testi__img {
+          width: 40%;
+          margin-right: 5%;
+          img {
+            width: 100%;
+          }
+        }
+        .testi__info {
+          h6 {
+            font-weight: 700;
+            font-size: 0.9rem;
+          }
+          p {
+            font-size: 0.9rem;
+          }
+          .rating {
+            color: #f6c016;
+          }
+        }
+      }
+    }
+  }
+  .testi__bot {
+    background: #29303b;
+    padding: 2% 0;
+    color: #fff;
+    .bot__left {
+      .bot__wrapper {
+        display: flex;
+        .bot__icon {
+          span {
+            font-size: 3.5rem;
+          }
+        }
+        .bot__info {
+          h6 {
+            font-size: 1.1rem;
+            font-weight: 700;
+          }
+          p {
+            font-size: 0.9rem;
+            margin: 0;
+          }
+        }
+      }
+    }
+    .bot__right {
+      button {
+        background-color: #fff;
+        color: #ffc000;
+        border: 2px solid #fff;
+        width: 216px;
+        height: 45px;
+        font-weight: 700;
+        outline: none;
+        font-size: 0.9rem;
+        cursor: pointer;
+      }
+    }
+  }
+}

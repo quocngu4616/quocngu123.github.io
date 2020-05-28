@@ -1,0 +1,27 @@
+.input{
+    .form-control{
+        padding:25px 10px;
+        border: 1px solid $color-green-0;
+        &::placeholder{
+            @include text($color-gray-2,$fs-2,$fw-normal);
+        }
+        &:focus{
+            box-shadow: none;
+        }
+    }
+    .input-group-prepend{
+        .input-group-text{
+            background-color:$color-white-0 ;
+            color: $color-green-0;
+            border:1px solid $color-green-0;
+            padding: 0 15px;
+        }
+        &:hover{
+            .input-group-text{
+            background-color:$color-green-0 ;
+            color:$color-white-0 ;
+        }
+            
+        }
+    }
+}

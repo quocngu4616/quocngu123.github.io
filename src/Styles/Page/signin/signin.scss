@@ -1,0 +1,79 @@
+.container__config {
+  margin-top: 70px;
+  .content-signin {
+    margin-top: 10px;
+    h3 {
+      @include text($color-black-0, $fs-2, $fw-bold);
+    }
+    p {
+      @include text($color-black-0, $fs-0, $fw-bold);
+      margin-top: 5px;
+    }
+    .btn--btn_blue {
+      width: 150px;
+      span {
+        border: 1px solid $color-white-0;
+        background-color: $color-white-0;
+        color: #3a559f;
+        padding: 0 8px;
+        margin-right: 3px;
+      }
+      &:hover {
+        span {
+          color: $color-white-0;
+          background-color: #3a559f;
+          border: 1px solid #3a559f;
+        }
+      }
+    }
+    .btn--btn_red-1 {
+      width: 150px;
+      margin-left: 10px;
+      span {
+        color: $color-white-0;
+        padding: 0 8px;
+        margin-right: 3px;
+      }
+      &:hover {
+        span {
+          color: #df322f;
+        }
+      }
+    }
+    .content-signin__form {
+      .btn--red {
+        width: 50%;
+        padding: 10px 0;
+        margin-left: 25%;
+      }
+      .form-control {
+        padding: 20px 10px;
+        border: 1px solid none;
+        background-color: $color-gray-5;
+        &::placeholder {
+          @include text($color-gray-4, $fs-2, $fw-normal);
+        }
+        &:focus {
+          box-shadow: none;
+          // background-color:$color-gray-5 ;
+        }
+      }
+    }
+  }
+  .content_img {
+    // background-image: url('../../img/im-digital.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80%;
+    width: 80%;
+    margin-top:70px ;
+    margin-left: 50px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+}

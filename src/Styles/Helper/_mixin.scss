@@ -1,0 +1,32 @@
+//cùng thuộc tính khác tham số thì viết mixin
+@mixin text($color,$fs,$fw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+@mixin button($fw,$color,$bg-color,$boder-color,$bg-color-hover) {
+    font-weight: $fw;
+    color: $color;
+    background-color: $bg-color;
+    border:1px solid $boder-color;
+    &:hover{
+        background-color:$bg-color-hover;
+    }
+}
+
+
+@mixin btn__default($bgcolor, $color, $border, $width, $height, $font-size) {
+    background-color: $bgcolor;
+    color: $color;
+    border: $border;
+    width: $width;
+    height: $height;
+    font-weight: bold;
+    outline: none;
+    font-size: $font-size;
+    cursor: pointer;
+    &:hover {
+        opacity: .9;
+    }
+ }

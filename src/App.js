@@ -1,26 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './Styles/main.scss'
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { routes } from './route/route'
+// import { BrowserRouter, Route, Switch } from 'react-router-dom'
+// import Home from './Screens/Home';
+// import Detail from './Screens/Detail';
+// import DetailItem from './Screens/DetaiItem';
+// import Signin from './Screens/Signin';
+// import Login from './Screens/Login';
+// // import DetailContent from './Layout/DetailContent/DetailContent';
+// import DetailCart from './Screens/DetailCart';
+// import Info from './Screens/Info';
+// import Admin from './Screens/Admin';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+
+export default class App extends React.Component {
+
+  render() {
+    return (
+      <Router>
+        {this.showRoutes(routes)}
+      </Router>
+    )
+  }
+  showRoutes = routes => {
+    let result = null;
+    if (routes.length > 0) {
+      result = routes.map((route, i) => {
+        return <Route path={route.path} exact={route.exact} component={route.main} key={i} />
+      })
+    }
+    return <Switch>{result}</Switch>
+  }
 }
-
-export default App;
+// export default App;

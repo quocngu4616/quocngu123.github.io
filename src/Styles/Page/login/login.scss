@@ -1,0 +1,148 @@
+//cover
+.container__config1 {
+  margin-top: 130px;
+  .content-signin {
+    margin-top: 10px;
+    h3 {
+      @include text($color-black-0, $fs-2, $fw-bold);
+    }
+    p {
+      @include text($color-black-0, $fs-0, $fw-bold);
+      margin-top: 5px;
+    }
+    .btn--btn_blue {
+      width: 150px;
+      span {
+        border: 1px solid $color-white-0;
+        background-color: $color-white-0;
+        color: #3a559f;
+        padding: 0 8px;
+        margin-right: 3px;
+      }
+      &:hover {
+        span {
+          color: $color-white-0;
+          background-color: #3a559f;
+          border: 1px solid #3a559f;
+        }
+      }
+    }
+    .btn--btn_red-1 {
+      width: 150px;
+      margin-left: 10px;
+      span {
+        color: $color-white-0;
+        padding: 0 8px;
+        margin-right: 3px;
+      }
+      &:hover {
+        span {
+          color: #df322f;
+        }
+      }
+    }
+  }
+  .content_img {
+    // background-image: url('../../img/im-digital.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 50px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+}
+// .cover-content {
+//   // margin-top: 100px;
+//   position: absolute;
+//   top: 30%;
+//   left: 10%;
+//   max-width: 460px;
+//   h1 {
+//     @include text($color-white-0, $fs-4, $fw-bold);
+//   }
+//   p {
+//     @include text($color-white-0, $fs-2 - 2, $fw-normal);
+//   }
+//   .input_search {
+//     flex-grow: 4;
+//     .input-group {
+//       margin-bottom: 0px !important;
+//     }
+//     .form-control {
+//       height: 44px;
+//       line-height: $line-height-0;
+//       padding: 10px;
+//       background-color: $color-white-0;
+//       border-top: 1px solid $color-gray-3;
+//       border-bottom: 1px solid $color-gray-3;
+//       border-left: 1px solid $color-gray-3;
+//       border-right: none;
+//       transition: none;
+//       &:focus {
+//         box-shadow: none;
+//         background-color: $color-white-0;
+//         border-top: 1px solid $color-gray-3;
+//         border-bottom: 1px solid $color-gray-3;
+//         border-left: 1px solid $color-gray-3;
+//       }
+//       &:focus + .input-group-prepend {
+//         //focus vô nut search
+//         .input-group-text {
+//           background-color: $color-white-0;
+//           color: $color-green-0;
+//           border-top: 1px solid $color-gray-3;
+//           border-bottom: 1px solid $color-gray-3;
+//           border-left: 1px solid $color-gray-3;
+//         }
+//         &:hover {
+//           .input-group-text {
+//             background-color: $color-yellow;
+//             color: $color-white-0;
+//           }
+//         }
+//       }
+//     }
+//     .input-group-prepend {
+//       .input-group-text {
+//         background-color: $color-white-0;
+//         color: $color-yellow;
+//         border-top: 1px solid $color-gray-3;
+//         border-bottom: 1px solid $color-gray-3;
+//         border-right: 1px solid $color-gray-3;
+//         border-left: none;
+//       }
+//       &:hover {
+//         .input-group-text {
+//           background-color: $color-yellow;
+//           color: $color-white-0;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @include respond-to('extra-large'){
+//     .navbar-nav{
+//         .business,.instructor{
+//         display: none;
+//     }}
+
+// }
+// @include respond-to('medium'){
+//         .categories .input_search{
+//         display: none;
+//     }
+
+// }
+
+.section {
+  background-color: $color-green-0;
+}
